@@ -1,13 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const connectDB = require('./config/db');
+const connectDB = require('./src/config/db');
 require('dotenv').config();
 
 // Import routes
-const userRoutes = require('./routes/users');
-const questionRoutes = require('./routes/questions');
-const setRoutes = require('./routes/sets');
+const userRoutes = require('./src/routes/users');
+const questionRoutes = require('./src/routes/questions');
+const setRoutes = require('./src/routes/sets');
 
 // Initialize Express
 const app = express();

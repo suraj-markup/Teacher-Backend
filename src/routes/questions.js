@@ -8,7 +8,7 @@ const authMiddleware = require('../middleware/auth');
 // Get questions with filtering
 router.get('/', getQuestions);
 
-router.use(authMiddleware);
+// router.use(authMiddleware);
 // Create a new question
 router.post('/', createQuestion);
 
